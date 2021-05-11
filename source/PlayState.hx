@@ -5,10 +5,11 @@ import flixel.text.FlxText;
 
 class PlayState extends FlxState
 {
+	var player:Player;
 	override public function create():Void
 	{
-		var text = new FlxText(10, 10, 100, "Hello, World!");
-		add(text);
+		player = new Player(20, 20);
+		add(player);
 		super.create();
 	}
 
